@@ -12,4 +12,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # 生成可执行文件
 add_executable(${PROJECT_NAME} 
   main.cpp  # 包含你的主程序文件
+  Server.cpp
 )

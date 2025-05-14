@@ -25,7 +25,7 @@ int main()
   struct sockaddr_in server_addr;
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(8080);
-  //监听任何来源地址
+  // 监听任何来源地址
   inet_pton(AF_INET, "0.0.0.0", &server_addr.sin_addr);
   bind(server_fd, (sockaddr *)&server_addr, sizeof(server_addr));
 
